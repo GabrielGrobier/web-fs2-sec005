@@ -1,0 +1,26 @@
+body{
+    background-image: url('../img/fondoWeb.png');
+}
+
+.textForm{
+    color: black;
+}
+.UserLogin{
+    background-color: rgb(240, 248, 255, 0.9);
+    margin-top:10%;
+    margin-left: 2%;
+
+}
+.perfil-descriptio-info{
+    background-color: rgb(240, 248, 255, 0.7);
+    margin-top: 5px;
+    border-style: solid;
+    border-color: rgb(0, 0, 255,0.3);
+    text-align: left;
+    color: black;
+
+}
+.perfil-description-row{
+    margin-left: 2%;
+
+}
