@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="static/style/estilo.css">
+</head>
+<body>
+    <!--Aqui esta el navbar-->
+    <header>
+            <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="#">PetHub</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="home.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="explorarM.html">Explorar Mascotas </a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="perfil.html">Perfil </a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="index.html">Login </a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--Login-->
+        <div class="UserLogin container row ">
+            <div class="row g-3 align-items-center">
+            <div class="col-auto">
+                <label for="password" id="usertext" class="col-form-label textForm ">Nombre completo </label>
+            </div>
+            <div class="col-auto">
+                <input type="text" id="nombreCompleto" class="form-control" aria-describedby="passwordHelpInline"  placeholder="Ingresa tu usuario">
+            </div>
+
+            <div class="row g-3 align-items-center">
+                <div class="col-auto">
+                    <label for="correoElectronico" id="usertext" class="col-form-label textForm ">Correo Electronico </label>
+                </div>
+                <div class="col-auto">
+                    <input type="email" id="correoElectronico" class="form-control" aria-describedby="passwordHelpInline" placeholder="Ingresa tu usuario">
+                </div>
+
+        
+        </div>
+            <div class="row g-3 align-items-center">
+            <div class="col-auto">
+                <label for="password" id="passwordText" class="col-form-label textForm">Contraseña </label>
+            </div>
+            <div class="col-auto">
+                <input type="password" id="password1"  class="form-control" aria-describedby="passwordHelpInline">
+            </div>
+
+            <div class="row g-3 align-items-center">
+                <div class="col-auto">
+                    <label for="password2" id="passwordText" class="col-form-label textForm">Repetir contraseña</label>
+                </div>
+                <div class="col-auto">
+                    <input type="password" id="password2"  class="form-control" aria-describedby="passwordHelpInline">
+                </div>
+            
+        </div>
+                <button type="button" onclick="registroUsuario()" class="btn btn-success mx-auto d-block" style="margin-top: 1%;">Enviar</button>
+                <a href="" ><label for="">Recuperar contraseña</label></a>
+        </div>
+
+    </main>
+    <script src="static/js/script.js"></script>
+</body>
+</html>

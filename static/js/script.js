@@ -42,3 +42,40 @@ function datosUsuario(){
     }
 
 }
+
+
+function registroUsuario(){
+    let nombreCompleto = document.getElementById("nombreCompleto").value
+    let correoElectronico = document.getElementById("correoElectronico").value
+    let password1 = document.getElementById("password1").value
+    let password2 = document.getElementById("password2").value
+    // es una variable de estado (bandera)
+    let existe = false
+    //usuarios es un elemento del localStorage llamado usuarios , si no existe 
+    //es un array vacio 
+    let usuarios = JSON.parse(localStorage.getItem("usuarios")) || []
+
+    for (let i = 0 ;i < usuarios.length; i++){
+        if(usuarios[i].correoElectronico === correoElectronico){
+            existe = true
+            break
+        }
+    }
+    if (correoElectronico == "" || nombreCompleto == "" || password1 == "" || password2 == ""){
+        alert("Todos los campos deben estan completados ")
+    }
+    else if (password1 != password2){
+        alert("las contraseñas no coinciden ")
+
+    }
+    else if(existe){
+        alert("El correo ya esta registrado")
+    }
+    else{
+        usuarios.push({nombreCompleto,correoElectronico,password1})
+        localStorage.setItem("usuarios",JSON.stringify(usuarios))
+
+    }
+
+
+}
