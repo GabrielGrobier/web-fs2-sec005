@@ -1,16 +1,28 @@
-
+console.log("El script funciona ")
 //let usuario = document.getElementById("UserLabel").value
 //console.log(usuario)
 
 //   and == &&
 // OR == || 
 
+import {sumar} from "./funciones.js"
+
+sumar(1,10)
+
 let datoUsuarioAdmin ={
-    "nombreCompleto":"Gabriel Grobier",
-    "usuario":"gabo",
-    "password":"gabo123ñ",
-    "estado":true
+    nombreCompleto:"Gabriel Grobier",
+    usuario:"gabo",
+    password:"gabo123ñ",
+    estado:true
 }
+console.log(datoUsuarioAdmin.nombreCompleto)
+//let usuarioNormal  = datosUsuario.usuario
+//destructuring 
+
+const {nombreCompleto , usuario } = datoUsuarioAdmin
+// const [] = nombreLista 
+
+
 
 window.onload = function(){
     if (window.location.pathname.endsWith("home.html")){
